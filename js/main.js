@@ -1,14 +1,14 @@
-// Init AOS
+// 1. Init AOS
 AOS.init();
 
-// Mobile menu toggle
+// 2. Mobile menu toggle
 document.getElementById('menu-btn').addEventListener('click', () => {
   document.getElementById('mobile-menu').classList.toggle('hidden');
 });
 
-// On DOM ready: carousel + countdown
+// 3. On DOM ready: carousel, countdown & AJAX form
 document.addEventListener('DOMContentLoaded', () => {
-  // Testimonials carousel
+  // Carousel rotation
   const slides = document.querySelectorAll('.testimonial-slide');
   let idx = 0;
   setInterval(() => {
@@ -17,11 +17,33 @@ document.addEventListener('DOMContentLoaded', () => {
     slides[idx].classList.add('active');
   }, 3000);
 
-  // Kick off countdown
+  // Countdown
   updateCountdown();
+
+  // AJAX Form submission + feedback
+  const form = document.querySelector('form[name="contact"]');
+  const feedback = document.getElementById('form-feedback');
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+
+    fetch('/', {
+      method: 'POST',
+      body: data
+    })
+    .then(() => {
+      form.reset();
+      feedback.classList.remove('hidden');
+    })
+    .catch(() => {
+      feedback.textContent = 'Oops! Something went wrong. Please try again.';
+      feedback.classList.remove('hidden');
+    });
+  });
 });
 
-// Countdown function
+// 4. Countdown logic (resets each midnight)
 function updateCountdown() {
   const now = new Date();
   const end = new Date();
