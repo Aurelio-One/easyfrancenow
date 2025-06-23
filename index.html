@@ -1,188 +1,366 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Easy France Now!</title>
-  <meta name="description" content="Move to France stress-free – the ultimate digital toolkit for English speakers."/>
-  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <!-- Tailwind CSS -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <!-- AOS -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
-  <!-- Custom Styles -->
-  <link href="css/styles.css" rel="stylesheet"/>
-  <!-- Meta Pixel Code -->
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', 'TON_PIXEL_ID_ICI');
-  fbq('track', 'PageView');
-</script>
-<noscript>
-  <img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=TON_PIXEL_ID_ICI&ev=PageView&noscript=1"/>
-</noscript>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Easy France Now!</title>
+    <meta
+      name="description"
+      content="Move to France stress-free – the ultimate digital toolkit for English speakers."
+    />
+    <link
+      rel="icon"
+      href="img/favicon.ico"
+      type="image/x-icon"
+    />
+    <link
+      rel="shortcut icon"
+      href="img/favicon.ico"
+      type="image/x-icon"
+    />
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS -->
+    <link
+      href="https://unpkg.com/aos@2.3.1/dist/aos.css"
+      rel="stylesheet"
+    />
+    <!-- Custom Styles -->
+    <link
+      href="css/styles.css"
+      rel="stylesheet"
+    />
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments)
+        }
+        if (!f._fbq) f._fbq = n
+        n.push = n
+        n.loaded = !0
+        n.version = '2.0'
+        n.queue = []
+        t = b.createElement(e)
+        t.async = !0
+        t.src = v
+        s = b.getElementsByTagName(e)[0]
+        s.parentNode.insertBefore(t, s)
+      })(
+        window,
+        document,
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
+      )
+      fbq('init', '253792907112336')
+      fbq('track', 'PageView')
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display: none"
+        src="https://www.facebook.com/tr?id=253792907112336&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-YY3SLWTL9C"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag() {
+        dataLayer.push(arguments)
+      }
+      gtag('js', new Date())
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-YY3SLWTL9C"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-YY3SLWTL9C');
-</script>
-</head>
-<body class="bg-gray-50 text-gray-800 antialiased">
-
-  <!-- NAVBAR -->
-  <header class="sticky">
-    <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-      <a href="#hero" class="text-2xl font-bold">
-                 <img
+      gtag('config', 'G-YY3SLWTL9C')
+    </script>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <!-- NAVBAR -->
+    <header class="sticky">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <a
+          href="#hero"
+          class="text-2xl font-bold"
+        >
+          <img
             src="img/logo.jpg"
             alt="Forbes"
             class="h-8"
-          /> 
-
-      </a>
-      <button id="menu-btn" class="md:hidden text-2xl">☰</button>
-      <nav class="hidden md:flex items-center space-x-4">
-        <a href="#hero" class="hover:text-blue-600">Home</a>
-        <a href="#story" class="hover:text-blue-600">Our Story</a>
-        <a href="#how" class="hover:text-blue-600">How It Works</a>
-        <a href="#details" class="hover:text-blue-600">Contents</a>
-        <a href="#team" class="hover:text-blue-600">Team</a>
-        <a href="#testimonials" class="hover:text-blue-600">Reviews</a>
-        <a href="#faq" class="hover:text-blue-600">FAQ</a>
-        <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00" class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700">Get Pack</a>
+          />
+        </a>
+        <button
+          id="menu-btn"
+          class="md:hidden text-2xl"
+        >
+          ☰
+        </button>
+        <nav class="hidden md:flex items-center space-x-4">
+          <a
+            href="#hero"
+            class="hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="#story"
+            class="hover:text-blue-600"
+            >Our Story</a
+          >
+          <a
+            href="#how"
+            class="hover:text-blue-600"
+            >How It Works</a
+          >
+          <a
+            href="#details"
+            class="hover:text-blue-600"
+            >Contents</a
+          >
+          <a
+            href="#team"
+            class="hover:text-blue-600"
+            >Team</a
+          >
+          <a
+            href="#testimonials"
+            class="hover:text-blue-600"
+            >Reviews</a
+          >
+          <a
+            href="#faq"
+            class="hover:text-blue-600"
+            >FAQ</a
+          >
+          <a
+            href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+            class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+            >Get Pack</a
+          >
+        </nav>
+      </div>
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t"
+      >
+        <div class="flex flex-col p-4 space-y-2">
+          <a
+            href="#hero"
+            class="hover:text-blue-600"
+            >Home</a
+          >
+          <a
+            href="#story"
+            class="hover:text-blue-600"
+            >Our Story</a
+          >
+          <a
+            href="#how"
+            class="hover:text-blue-600"
+            >How It Works</a
+          >
+          <a
+            href="#details"
+            class="hover:text-blue-600"
+            >Contents</a
+          >
+          <a
+            href="#team"
+            class="hover:text-blue-600"
+            >Team</a
+          >
+          <a
+            href="#testimonials"
+            class="hover:text-blue-600"
+            >Reviews</a
+          >
+          <a
+            href="#faq"
+            class="hover:text-blue-600"
+            >FAQ</a
+          >
+          <a
+            href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+            class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700"
+            >Get Pack</a
+          >
+        </div>
       </nav>
-    </div>
-    <nav id="mobile-menu" class="hidden md:hidden bg-white border-t">
-      <div class="flex flex-col p-4 space-y-2">
-        <a href="#hero" class="hover:text-blue-600">Home</a>
-        <a href="#story" class="hover:text-blue-600">Our Story</a>
-        <a href="#how" class="hover:text-blue-600">How It Works</a>
-        <a href="#details" class="hover:text-blue-600">Contents</a>
-        <a href="#team" class="hover:text-blue-600">Team</a>
-        <a href="#testimonials" class="hover:text-blue-600">Reviews</a>
-        <a href="#faq" class="hover:text-blue-600">FAQ</a>
-        <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00" class="bg-blue-600 text-white px-3 py-2 rounded hover:bg-blue-700">Get Pack</a>
+    </header>
+
+    <!-- HERO WITH TIMER -->
+    <section
+      id="hero"
+      class="relative py-16 md:py-24 px-4 text-center bg-cover bg-center bg-no-repeat"
+      style="
+        background-image: url('img/hero-bg.webp');
+        background-color: rgba(0, 0, 0, 0.2);
+        background-blend-mode: overlay;
+      "
+      data-aos="zoom-in"
+    >
+      <div class="absolute top-4 inset-x-0 flex justify-center space-x-4">
+        <span
+          class="bg-green-500 text-white px-4 py-2 rounded-full animate-pulse font-semibold"
+        >
+          <del>$117</del> $97
+        </span>
+        <span
+          class="bg-white text-green-500 px-4 py-2 rounded-full border border-green-500 font-semibold"
+        >
+          Offer ends in <span id="countdown-timer">00h 00m 00s</span>
+        </span>
       </div>
-    </nav>
-  </header>
-
-  <!-- HERO WITH TIMER -->
-<section id="hero" class="relative py-16 md:py-24 px-4 text-center bg-cover bg-center bg-no-repeat" style="background-image: url('img/hero-bg.webp'); background-color: rgba(0,0,0,0.2); background-blend-mode: overlay;" data-aos="zoom-in">
-    <div class="absolute top-4 inset-x-0 flex justify-center space-x-4">
-      <span class="bg-green-500 text-white px-4 py-2 rounded-full animate-pulse font-semibold">
-        <del>$117</del> $97
-      </span>
-      <span class="bg-white text-green-500 px-4 py-2 rounded-full border border-green-500 font-semibold">
-        Offer ends in <span id="countdown-timer">00h 00m 00s</span>
-      </span>
-    </div>
-    <div class="absolute top-4 left-4 hidden sm:block">
-      <span class="bg-green-500 text-white px-2 py-1 text-xs font-semibold rounded transform -rotate-6 animate-pulse">
-        Special Offer
-      </span>
-    </div>
-    <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-white">Move to France Stress-Free 🇫🇷</h1>
-    <p class="max-w-2xl mx-auto text-base md:text-lg text-white mb-6">
-      Visas, housing, healthcare, banking, work &amp; culture—all in one comprehensive toolkit.
-    </p>
-    <div class="flex justify-center space-x-4">
-      <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00" class="bg-green-600 text-white py-3 px-6 md:px-8 rounded-xl text-base md:text-lg hover:bg-green-700 shadow-xl transition">
-        Get the Pack – $97
-      </a>
-    </div>
-  </section>
-<!-- OUR STORY -->
-<section id="story" class="py-20 px-6 bg-white" data-aos="fade-up">
-  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
-    
-    <!-- Text -->
-    <div class="space-y-5">
-      <h2 class="text-3xl md:text-4xl font-bold text-blue-800">Our Story</h2>
-      <p class="text-gray-700 leading-relaxed">
-        We’re a team of French lawyers, accountants & admin pros who saw too many expats struggle…
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        Partnering with U.S. expats, we distilled years of experience into clear, actionable steps.
-      </p>
-      <p class="text-gray-700 leading-relaxed">
-        Over 600 Americans have used our pack to secure visas, find homes, set up businesses & integrate smoothly.
-      </p>
-      <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
-         class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl text-base font-medium hover:bg-green-700 transition">
-        Get the Pack – $97
-      </a>
-    </div>
-
-    <!-- Image -->
-    <div class="w-full">
-      <img src="img/team.webp" alt="Our team" 
-           class="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-md object-top"/>
-    </div>
-
-  </div>
-  </div>
-</section>
-
-  <!-- HOW IT WORKS -->
-  <section id="how" class="py-16 px-4 bg-gray-50" data-aos="fade-up">
-    <div class="max-w-5xl mx-auto text-center space-y-8">
-      <h2 class="text-3xl font-bold text-blue-800">How It Works</h2>
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
-          <div class="text-4xl mb-4 text-blue-600">1</div>
-          <h3 class="font-semibold mb-2">Get Your Pack</h3>
-          <p class="text-gray-600 text-sm">Get the toolkit that fits your needs.</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
-          <div class="text-4xl mb-4 text-blue-600">2</div>
-          <h3 class="font-semibold mb-2">Secure Payment</h3>
-          <p class="text-gray-600 text-sm">Pay securely via credit card in one click.</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
-          <div class="text-4xl mb-4 text-blue-600">3</div>
-          <h3 class="font-semibold mb-2">Instant Download</h3>
-          <p class="text-gray-600 text-sm">Get all 6 PDFs delivered immediately.</p>
-        </div>
-        <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
-          <div class="text-4xl mb-4 text-blue-600">4</div>
-          <h3 class="font-semibold mb-2">Start Stress-Free</h3>
-          <p class="text-gray-600 text-sm">Follow step-by-step guides &amp; enjoy support.</p>
-        </div>
+      <div class="absolute top-4 left-4 hidden sm:block">
+        <span
+          class="bg-green-500 text-white px-2 py-1 text-xs font-semibold rounded transform -rotate-6 animate-pulse"
+        >
+          Special Offer
+        </span>
       </div>
-      <div class="mt-8">
-        <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00" class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl hover:bg-green-700 transition">
-          Ready to Start? Get the Pack – $97
+      <h1
+        class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-white"
+      >
+        Move to France Stress-Free 🇫🇷
+      </h1>
+      <p class="max-w-2xl mx-auto text-base md:text-lg text-white mb-6">
+        Visas, housing, healthcare, banking, work &amp; culture—all in one
+        comprehensive toolkit.
+      </p>
+      <div class="flex justify-center space-x-4">
+        <a
+          href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+          class="bg-green-600 text-white py-3 px-6 md:px-8 rounded-xl text-base md:text-lg hover:bg-green-700 shadow-xl transition"
+        >
+          Get the Pack – $97
         </a>
       </div>
-    </div>
-  </section>
+    </section>
+    <!-- OUR STORY -->
+    <section
+      id="story"
+      class="py-20 px-6 bg-white"
+      data-aos="fade-up"
+    >
+      <div
+        class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center"
+      >
+        <!-- Text -->
+        <div class="space-y-5">
+          <h2 class="text-3xl md:text-4xl font-bold text-blue-800">
+            Our Story
+          </h2>
+          <p class="text-gray-700 leading-relaxed">
+            We’re a team of French lawyers, accountants & admin pros who saw too
+            many expats struggle…
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Partnering with U.S. expats, we distilled years of experience into
+            clear, actionable steps.
+          </p>
+          <p class="text-gray-700 leading-relaxed">
+            Over 600 Americans have used our pack to secure visas, find homes,
+            set up businesses & integrate smoothly.
+          </p>
+          <a
+            href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+            class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl text-base font-medium hover:bg-green-700 transition"
+          >
+            Get the Pack – $97
+          </a>
+        </div>
 
-  <!-- 30-DAY GUARANTEE -->
-  <section id="guarantee" class="py-16 px-4 bg-white" data-aos="fade-up">
-    <div class="max-w-3xl mx-auto text-center space-y-4">
-      <h2 class="text-3xl font-bold text-blue-800">30-Day Money-Back Guarantee</h2>
-      <p class="text-gray-700">Not satisfied? Get a full refund within 30 days—no questions asked.</p>
-      <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00" class="inline-block bg-red-600 text-white py-3 px-8 rounded-xl text-lg hover:bg-red-700 shadow-lg transition">
-        Try Risk-Free
-      </a>
-    </div>
-  </section>
+        <!-- Image -->
+        <div class="w-full">
+          <img
+            src="img/team.webp"
+            alt="Our team"
+            class="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-md object-top"
+          />
+        </div>
+      </div>
+    </section>
 
-   <!-- PRESS & TRUST -->
+    <!-- HOW IT WORKS -->
+    <section
+      id="how"
+      class="py-16 px-4 bg-gray-50"
+      data-aos="fade-up"
+    >
+      <div class="max-w-5xl mx-auto text-center space-y-8">
+        <h2 class="text-3xl font-bold text-blue-800">How It Works</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <div class="text-4xl mb-4 text-blue-600">1</div>
+            <h3 class="font-semibold mb-2">Get Your Pack</h3>
+            <p class="text-gray-600 text-sm">
+              Get the toolkit that fits your needs.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <div class="text-4xl mb-4 text-blue-600">2</div>
+            <h3 class="font-semibold mb-2">Secure Payment</h3>
+            <p class="text-gray-600 text-sm">
+              Pay securely via credit card in one click.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <div class="text-4xl mb-4 text-blue-600">3</div>
+            <h3 class="font-semibold mb-2">Instant Download</h3>
+            <p class="text-gray-600 text-sm">
+              Get all 6 PDFs delivered immediately.
+            </p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow hover:shadow-lg">
+            <div class="text-4xl mb-4 text-blue-600">4</div>
+            <h3 class="font-semibold mb-2">Start Stress-Free</h3>
+            <p class="text-gray-600 text-sm">
+              Follow step-by-step guides &amp; enjoy support.
+            </p>
+          </div>
+        </div>
+        <div class="mt-8">
+          <a
+            href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+            class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl hover:bg-green-700 transition"
+          >
+            Ready to Start? Get the Pack – $97
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 30-DAY GUARANTEE -->
+    <section
+      id="guarantee"
+      class="py-16 px-4 bg-white"
+      data-aos="fade-up"
+    >
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-3xl font-bold text-blue-800">
+          30-Day Money-Back Guarantee
+        </h2>
+        <p class="text-gray-700">
+          Not satisfied? Get a full refund within 30 days—no questions asked.
+        </p>
+        <a
+          href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+          class="inline-block bg-red-600 text-white py-3 px-8 rounded-xl text-lg hover:bg-red-700 shadow-lg transition"
+        >
+          Try Risk-Free
+        </a>
+      </div>
+    </section>
+
+    <!-- PRESS & TRUST -->
     <section
       id="press"
       class="py-16 px-4 bg-white"
@@ -215,7 +393,7 @@
       </div>
     </section>
 
- <!-- CONTENT GRID (6 PDFs) -->
+    <!-- CONTENT GRID (6 PDFs) -->
     <section
       id="details"
       class="py-16 px-4 bg-white"
@@ -309,7 +487,6 @@
             alt="PDF logo"
             class="h-10 mr-8"
           />
-          </svg>
           <div>
             <h4 class="font-semibold mb-1">6: Taxes &amp; Freelance</h4>
             <p class="text-gray-600 text-sm">
@@ -446,7 +623,7 @@
           H.
         </blockquote>
         <blockquote
-          class="testimonial-slide p-6 bg-gray-100 rounded-xl text-gray-800 "
+          class="testimonial-slide p-6 bg-gray-100 rounded-xl text-gray-800"
         >
           “The housing guide got me the perfect flat in weeks.” — Laura M.
         </blockquote>
@@ -503,34 +680,65 @@
       </div>
     </section>
 
+    <!-- CONTACT FORM -->
+    <section
+      id="form"
+      class="py-16 px-4 bg-white"
+      data-aos="fade-up"
+    >
+      <div class="max-w-md mx-auto text-center space-y-4">
+        <h2 class="text-2xl font-bold">Still have questions?</h2>
 
-  <!-- CONTACT FORM -->
-  <section id="form" class="py-16 px-4 bg-white" data-aos="fade-up">
-    <div class="max-w-md mx-auto text-center space-y-4">
-      <h2 class="text-2xl font-bold">Still have questions?</h2>
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          class="space-y-3"
+        >
+          <input
+            type="hidden"
+            name="form-name"
+            value="contact"
+          />
 
-      <form name="contact" method="POST" data-netlify="true" class="space-y-3">
-        <input type="hidden" name="form-name" value="contact"/>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your name"
+            required
+            class="w-full border rounded-xl px-4 py-2"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your email"
+            required
+            class="w-full border rounded-xl px-4 py-2"
+          />
+          <textarea
+            name="message"
+            rows="4"
+            placeholder="Your message"
+            required
+            class="w-full border rounded-xl px-4 py-2"
+          ></textarea>
 
-        <input type="text" name="name" placeholder="Your name" required
-               class="w-full border rounded-xl px-4 py-2"/>
-        <input type="email" name="email" placeholder="Your email" required
-               class="w-full border rounded-xl px-4 py-2"/>
-        <textarea name="message" rows="4" placeholder="Your message" required
-                  class="w-full border rounded-xl px-4 py-2"></textarea>
+          <button
+            type="submit"
+            class="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition"
+          >
+            Send Message
+          </button>
+        </form>
 
-        <button type="submit"
-                class="w-full bg-blue-600 text-white py-3 rounded-xl hover:bg-blue-700 transition">
-          Send Message
-        </button>
-      </form>
-
-      <div id="form-feedback"
-           class="hidden text-green-600 font-medium mt-4">
-        Thank you! Your message has been sent. We’ll reply within 24 hours.
+        <div
+          id="form-feedback"
+          class="hidden text-green-600 font-medium mt-4"
+        >
+          Thank you! Your message has been sent. We’ll reply within 24 hours.
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
     <!-- PROFESSIONAL LIGHT FOOTER -->
     <footer class="bg-gray-100 text-gray-700">
@@ -621,8 +829,8 @@
       </div>
     </footer>
 
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script src="js/main.js"></script>
-</body>
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
