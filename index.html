@@ -13,6 +13,33 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
   <!-- Custom Styles -->
   <link href="css/styles.css" rel="stylesheet"/>
+  <!-- Meta Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 'TON_PIXEL_ID_ICI');
+  fbq('track', 'PageView');
+</script>
+<noscript>
+  <img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=TON_PIXEL_ID_ICI&ev=PageView&noscript=1"/>
+</noscript>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-YY3SLWTL9C"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-YY3SLWTL9C');
+</script>
 </head>
 <body class="bg-gray-50 text-gray-800 antialiased">
 
@@ -78,19 +105,37 @@
       </a>
     </div>
   </section>
-
-  <!-- OUR STORY -->
-  <section id="story" class="py-16 px-4 bg-white" data-aos="fade-up">
-    <div class="max-w-3xl mx-auto text-center space-y-6">
-      <h2 class="text-2xl md:text-3xl font-bold text-blue-800">Our Story</h2>
-      <p class="text-gray-700">We’re a team of French lawyers, accountants &amp; admin pros who saw too many expats struggle…</p>
-      <p class="text-gray-700">Partnering with U.S. expats, we distilled years of experience into clear, actionable steps…</p>
-      <p class="text-gray-700">Over 600 Americans have used our pack to secure visas, find homes, set up businesses &amp; integrate smoothly.</p>
-      <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00" class="mt-4 inline-block bg-green-600 text-white py-3 px-6 rounded-xl hover:bg-green-700 transition">
+<!-- OUR STORY -->
+<section id="story" class="py-20 px-6 bg-white" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+    
+    <!-- Text -->
+    <div class="space-y-5">
+      <h2 class="text-3xl md:text-4xl font-bold text-blue-800">Our Story</h2>
+      <p class="text-gray-700 leading-relaxed">
+        We’re a team of French lawyers, accountants & admin pros who saw too many expats struggle…
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Partnering with U.S. expats, we distilled years of experience into clear, actionable steps.
+      </p>
+      <p class="text-gray-700 leading-relaxed">
+        Over 600 Americans have used our pack to secure visas, find homes, set up businesses & integrate smoothly.
+      </p>
+      <a href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
+         class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl text-base font-medium hover:bg-green-700 transition">
         Get the Pack – $97
       </a>
     </div>
-  </section>
+
+    <!-- Image -->
+    <div class="w-full">
+      <img src="img/team.webp" alt="Our team" 
+           class="rounded-xl w-full h-auto max-h-[400px] object-cover shadow-md object-top"/>
+    </div>
+
+  </div>
+  </div>
+</section>
 
   <!-- HOW IT WORKS -->
   <section id="how" class="py-16 px-4 bg-gray-50" data-aos="fade-up">
@@ -190,7 +235,7 @@
           />
 
           <div>
-            <h4 class="font-semibold mb-1">PDF 1: Visas Explained</h4>
+            <h4 class="font-semibold mb-1">1: Visas Explained</h4>
             <p class="text-gray-600 text-sm">
               Deep dive into all visa types, sample forms &amp; renewal hacks.
             </p>
@@ -205,7 +250,7 @@
             class="h-10 mr-8"
           />
           <div>
-            <h4 class="font-semibold mb-1">PDF 2: Banking &amp; Budget</h4>
+            <h4 class="font-semibold mb-1">2: Banking &amp; Budget</h4>
             <p class="text-gray-600 text-sm">
               Open accounts, transfer USD→EUR &amp; budget templates.
             </p>
@@ -220,7 +265,7 @@
             class="h-10 mr-8"
           />
           <div>
-            <h4 class="font-semibold mb-1">PDF 3: Housing Hacks</h4>
+            <h4 class="font-semibold mb-1">3: Housing Hacks</h4>
             <p class="text-gray-600 text-sm">
               Scripts, site tips &amp; guarantor workarounds.
             </p>
@@ -235,7 +280,7 @@
             class="h-10 mr-8"
           />
           <div>
-            <h4 class="font-semibold mb-1">PDF 4: Admin Survival</h4>
+            <h4 class="font-semibold mb-1">4: Admin Survival</h4>
             <p class="text-gray-600 text-sm">
               CERFA forms, timeline &amp; template letters.
             </p>
@@ -250,7 +295,7 @@
             class="h-10 mr-8"
           />
           <div>
-            <h4 class="font-semibold mb-1">PDF 5: Healthcare Guide</h4>
+            <h4 class="font-semibold mb-1">5: Healthcare Guide</h4>
             <p class="text-gray-600 text-sm">
               CPAM, mutuelle &amp; reimbursement tricks.
             </p>
@@ -266,7 +311,7 @@
           />
           </svg>
           <div>
-            <h4 class="font-semibold mb-1">PDF 6: Taxes &amp; Freelance</h4>
+            <h4 class="font-semibold mb-1">6: Taxes &amp; Freelance</h4>
             <p class="text-gray-600 text-sm">
               Auto-entrepreneur setup, URSSAF &amp; VAT guide.
             </p>
