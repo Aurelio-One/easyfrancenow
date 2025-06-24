@@ -10,7 +10,7 @@ header.sticky {
   position: relative;
   max-width: 800px;
   margin: auto;
-  min-height: 6rem;
+  min-height: 12rem;
   overflow: hidden;
 }
 .testimonial-slide {
