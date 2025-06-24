@@ -64,6 +64,8 @@ function updateCountdown() {
 }
 
 function trackCheckoutStart() {
+    console.log('InitiateCheckout triggered') // <--- à ajouter ici
+
   // Meta Pixel
   if (typeof fbq !== 'undefined') {
     fbq('track', 'InitiateCheckout')
