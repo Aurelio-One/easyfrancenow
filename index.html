@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Easy France Now!</title>
+    <meta name="description" content="Move to France stress-free. Starter Checklist $9, full guide, and coaching."/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon"/>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+    <!-- Custom Styles -->
+    <link href="css/styles.css" rel="stylesheet"/>
+
+    <!-- Meta Pixel Code -->
+    <script>
+      !(function (f, b, e, v, n, t, s) {
+        if (f.fbq) return
+        n = f.fbq = function () { n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments) }
+        if (!f._fbq) f._fbq = n
+        n.push = n; n.loaded = !0; n.version = '2.0'
+        n.queue = []; t = b.createElement(e); t.async = !0; t.src = v
+        s = b.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t, s)
+      })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js')
+    </script>
+    <script>
+      fbq('init', '253792907112336'); fbq('track', 'PageView')
+    </script>
+    <noscript>
+      <img height="1" width="1" style="display:none"
+           src="https://www.facebook.com/tr?id=253792907112336&ev=PageView&noscript=1"/>
+    </noscript>
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-YY3SLWTL9C"></script>
+    <script>
+      window.dataLayer = window.dataLayer || []
+      function gtag(){ dataLayer.push(arguments) }
+      gtag('js', new Date()); gtag('config', 'G-YY3SLWTL9C')
+    </script>
+
+    <style>
+      .shadow-card { box-shadow: 0 8px 30px rgba(0,0,0,.08); }
+    </style>
+  </head>
+  <body class="text-gray-800 antialiased">
+    <!-- NAVBAR (conservée, épurée) -->
+    <header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-gray-100">
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <a href="#hero" class="text-2xl font-bold">
+          <img src="img/logo.jpg" alt="Easy France Now" class="h-8"/>
+        </a>
+<button id="menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false" class="md:hidden text-2xl">☰</button>
+        <nav class="hidden md:flex items-center space-x-4">
+          <a href="#hero" class="hover:text-gray-600">Home</a>
+          <a href="#how" class="hover:text-gray-600">What you get</a>
+          <a href="#guarantee" class="hover:text-gray-600">Guarantee</a>
+          <a href="#faq" class="hover:text-gray-600">FAQ</a>
+          <a href="#buy" class="bg-green-600 text-white px-3 py-1 rounded hover:bg-gray-700">Get Checklist – $9</a>
+        </nav>
+      </div>
+        <nav id="mobile-menu" class="hidden md:hidden bg-white border-t z-40">
+          <div class="flex flex-col p-4 space-y-2">
+          <a href="#hero" class="hover:text-gray-600">Home</a>
+          <a href="#how" class="hover:text-gray-600">What you get</a>
+          <a href="#guarantee" class="hover:text-gray-600">Guarantee</a>
+          <a href="#faq" class="hover:text-gray-600">FAQ</a>
+          <a href="#buy" class="bg-green-600 text-white px-3 py-2 rounded hover:bg-gray-700">Get Checklist – $9</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section id="hero" class="relative py-16 md:py-24 px-4 text-center bg-cover bg-center bg-no-repeat"
+      style="background-image:url('img/hero-bg.webp'); background-color:rgba(0,0,0,.25); background-blend-mode:overlay;"
+      data-aos="zoom-in">
+      <h1 class="text-3xl md:text-5xl lg:text-6xl font-extrabold mb-4 text-white max-w-2xl mx-auto">
+        Moving to France? Don’t waste $1,000s on mistakes.
+      </h1>
+      <p class="max-w-2xl mx-auto text-base md:text-lg text-white/90 mb-6">
+        Get the <span class="font-semibold">Starter Checklist</span> Americans use to relocate right.
+        Visas, housing, healthcare, banking — all in one place.
+      </p>
+      <div class="flex justify-center space-x-4">
+        <a
+          href="#buy"
+          class="bg-green-600 text-white py-3 px-6 md:px-8 rounded-xl text-base md:text-lg hover:bg-green-700 shadow-xl transition"
+        >
+          Get Starter Checklist – $9
+        </a>
+      </div>
+      <div class="mt-4 text-white/80 text-sm">30-day money-back guarantee • Trusted by 600+ expats</div>
+    </section>
+
+    <!-- HOW (remappé en “3 problèmes -> solutions”) -->
+    <section id="how" class="py-16 px-4" data-aos="fade-up">
+      <div class="max-w-5xl mx-auto text-center space-y-8">
+        <h2 class="text-3xl font-bold text-gray-800">Avoid the 3 big traps</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div class="p-6 bg-white rounded-xl shadow-card">
+            <div class="text-4xl mb-3 text-gray-600">1</div>
+            <h3 class="font-semibold mb-2">Visa rejected</h3>
+            <p class="text-gray-600 text-sm">Pick the right visa and prepare a complete dossier.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow-card">
+            <div class="text-4xl mb-3 text-gray-600">2</div>
+            <h3 class="font-semibold mb-2">No housing accepted</h3>
+            <p class="text-gray-600 text-sm">Win landlords with a strong dossier and message templates.</p>
+          </div>
+          <div class="p-6 bg-white rounded-xl shadow-card">
+            <div class="text-4xl mb-3 text-gray-600">3</div>
+            <h3 class="font-semibold mb-2">Admin chaos</h3>
+            <p class="text-gray-600 text-sm">Follow a clear 90-day timeline for prefecture, CPAM, taxes, banking.</p>
+          </div>
+        </div>
+        <div class="mt-2">
+          <a href="#buy" class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl hover:bg-green-700 transition">
+            Get Starter Checklist – $9
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILS (remappé = Produit d’appel $9 + mockups) -->
+    <section id="details" class="py-20 px-6 md:px-8 bg-white" data-aos="fade-up">
+      <div class="max-w-5xl mx-auto grid gap-10 lg:grid-cols-2 items-center">
+        <div class="w-full">
+          <img src="img/efn-checklist-pages.webp" alt="Starter Checklist pages"
+               class="rounded-2xl w-full h-auto max-h-[460px] object-cover shadow-card"/>
+        </div>
+        <div class="space-y-5">
+          <h2 class="text-3xl md:text-4xl font-extrabold text-gray-800">Starter Checklist — $9</h2>
+          <p class="text-gray-700 leading-relaxed">
+            A fast, practical PDF to avoid costly mistakes and start right.
+          </p>
+          <ul class="list-disc list-inside text-sm text-gray-700 space-y-1">
+            <li>Visa options + required documents at a glance</li>
+            <li>Housing dossier checklist + landlord outreach script</li>
+            <li>Banking setup and cheap USD→EUR transfers</li>
+            <li>Healthcare registration essentials (CPAM + mutuelle)</li>
+            <li>Admin timeline for the first 90 days</li>
+          </ul>
+          <a
+            href="#"
+            data-checkout-starter="https://your-checkout.com/starter-9"
+            class="efn-buy-starter inline-block bg-green-600 text-white py-3 px-6 rounded-xl text-base font-medium hover:bg-green-700 transition"
+          >
+            Get Instant Access — $9
+          </a>
+          <div class="text-xs text-gray-500">Instant download • Money-back guarantee</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GUARANTEE (conservée) -->
+    <section id="guarantee" class="py-16 px-4" data-aos="fade-up">
+      <div class="max-w-3xl mx-auto text-center space-y-4">
+        <h2 class="text-3xl font-bold text-gray-800">30-Day Money-Back Guarantee</h2>
+        <p class="text-gray-700">If it’s not useful, email us within 30 days for a full refund.</p>
+        <a
+          href="#"
+          data-checkout-starter="https://your-checkout.com/starter-9"
+          class="efn-buy-starter inline-block bg-gray-900 text-white py-3 px-8 rounded-xl text-lg hover:bg-red-700 transition"
+        >
+          Try the Starter Checklist — $9
+        </a>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section id="reviews" class="py-20 bg-white" data-aos="fade-up">
+      <div class="max-w-5xl mx-auto px-6">
+        <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
+          What Real Buyers Say
+        </h2>
+
+        <div class="grid gap-8 md:grid-cols-3">
+          <!-- Review 1 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">David R.</p>
+                <p class="text-xs text-gray-500">New York → Paris</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“I wasted 3 weeks trying to open a bank account until I saw the exact steps in this checklist. N26 first, then the French RIB. Done in 48h.”</p>
+          </div>
+
+          <!-- Review 2 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">Sarah L.</p>
+                <p class="text-xs text-gray-500">Boston → Lyon</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“The prefecture was hell. This PDF had the timeline + forms in order. Saved me a wasted trip.”</p>
+          </div>
+
+          <!-- Review 3 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/55.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">Chris P.</p>
+                <p class="text-xs text-gray-500">Los Angeles → Paris</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“Thought it was just a PDF, but it had landlord scripts, insurance names, and a week-by-week list. Used it day 1.”</p>
+          </div>
+
+          <!-- Review 4 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/12.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">Amanda J.</p>
+                <p class="text-xs text-gray-500">Austin → Bordeaux</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“Visa approved but lost after landing. The guide told me what to do week 1, week 2, week 3. No panic.”</p>
+          </div>
+
+          <!-- Review 5 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/7.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">Mike W.</p>
+                <p class="text-xs text-gray-500">Chicago → Marseille</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“CPAM scared me. The checklist had the form + doc list. Took 20 minutes instead of months.”</p>
+          </div>
+
+          <!-- Review 6 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/76.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">Anna K.</p>
+                <p class="text-xs text-gray-500">Seattle → Nice</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“Almost paid €350 to a relocation service. This $9 file had the same practical info.”</p>
+          </div>
+
+          <!-- Review 7 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/men/19.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">James T.</p>
+                <p class="text-xs text-gray-500">Miami → Toulouse</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“Finding an apartment is brutal. The landlord script got me 3 replies in 24h.”</p>
+          </div>
+
+          <!-- Review 8 -->
+          <div class="p-6 bg-gray-50 rounded-xl shadow-card">
+            <div class="flex items-center mb-4">
+              <img src="https://randomuser.me/api/portraits/women/5.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+              <div>
+                <p class="font-semibold">Olivia M.</p>
+                <p class="text-xs text-gray-500">San Francisco → Paris</p>
+              </div>
+            </div>
+            <p class="text-gray-700 text-sm">“Printed it and ticked boxes. No more random Googling. One doc, done.”</p>
+          </div>
+
+          <!-- Review 9 -->
+<div class="p-6 bg-gray-50 rounded-xl shadow-card">
+  <div class="flex items-center mb-4">
+    <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="profile" class="w-12 h-12 rounded-full mr-3">
+    <div>
+      <p class="font-semibold">Brian H.</p>
+      <p class="text-xs text-gray-500">Denver → Lille</p>
+    </div>
+  </div>
+  <p class="text-gray-700 text-sm">“Didn’t know you needed a French phone number before almost everything else. The guide said: buy a prepaid SIM at Relay on arrival. First thing I did, and it unlocked every next step.”</p>
+</div>
+        </div>
+
+
+
+
+    <!-- UPSELL -->
+    <section id="team" class="py-16 px-4" data-aos="fade-up">
+                  <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">What Most Expats Get Next</h2>
+
+      <div class="max-w-5xl mx-auto grid gap-8 grid-cols-1 sm:grid-cols-2">
+
+        <div class="p-6 bg-white rounded-xl shadow-card">
+          <h3 class="text-xl font-semibold mb-2">Full Guide — $59</h3>
+          <p class="text-gray-600 text-sm">
+            50+ pages. Detailed walkthroughs, templates, and examples for visas, housing, banking,
+            admin, healthcare, taxes, and freelancing.
+          </p>
+          <a
+            href="#"
+            data-checkout-full="https://your-checkout.com/full-59"
+            class="efn-buy-full inline-block mt-4 bg-green-600 text-white px-5 py-2.5 rounded-lg hover:bg-gray-700 transition"
+          >
+            Get the Full Guide — $59
+          </a>
+        </div>
+        <div class="p-6 bg-white rounded-xl shadow-card">
+          <h3 class="text-xl font-semibold mb-2">1:1 Coaching Call — $149</h3>
+          <p class="text-gray-600 text-sm">
+            30 minutes on Zoom with an expat advisor. Review your plan, documents, and timeline.
+          </p>
+          <a
+            href="#"
+            data-checkout-call="https://your-checkout.com/call-149"
+            class="efn-buy-call inline-block mt-4 bg-gray-900 text-white px-5 py-2.5 rounded-lg hover:bg-black transition"
+          >
+            Book Your Call — $149
+          </a>
+        </div>
+      </div>
+    </section>
+
+<!-- FAQ REDESIGN -->
+<section id="faq" class="py-20 px-6" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Frequently Asked Questions</h2>
+
+    <div class="grid gap-6 md:grid-cols-2">
+      <!-- Card -->
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">Is this only for Americans?</h3>
+        <p class="text-gray-600 text-sm">No. Any English speaker relocating to France will benefit. The pack is built with Americans in mind but works for Canadians, Brits, Aussies, etc.</p>
+      </div>
+      
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">What’s inside the $9 Starter Checklist?</h3>
+        <p class="text-gray-600 text-sm">A 10-page PDF with checklists covering visas, housing, banking, healthcare, and a 90-day admin timeline. It’s a quick-start, not fluff.</p>
+      </div>
+      
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">How do I get the file?</h3>
+        <p class="text-gray-600 text-sm">Instant download right after checkout + a copy by email. You can keep it forever.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">Can I get a refund?</h3>
+        <p class="text-gray-600 text-sm">Yes. 30-day no-questions-asked guarantee. Just email us and we’ll refund you.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">What’s the difference between Starter Checklist and Full Guide?</h3>
+        <p class="text-gray-600 text-sm">The Starter Checklist is a quick 10-page pack. The Full Guide is 50+ pages, with detailed walkthroughs, templates, scripts, and tax/freelance content.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">Is the content up to date?</h3>
+        <p class="text-gray-600 text-sm">Yes. We update packs when visa rules, banking requirements, or healthcare processes change.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">Do I need a French guarantor for housing?</h3>
+        <p class="text-gray-600 text-sm">Not always. The pack includes alternatives (guarantor services, larger deposits, templates to convince landlords).</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">Can I open a bank account before arrival?</h3>
+        <p class="text-gray-600 text-sm">Yes. We explain N26, Revolut, and Wise accounts that work remotely, then how to open a French RIB in person.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">How long does CPAM take?</h3>
+        <p class="text-gray-600 text-sm">2–3 months average. The pack shows the forms, docs, and timeline so you don’t get stuck uninsured.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">What if I don’t speak French?</h3>
+        <p class="text-gray-600 text-sm">We include landlord and prefecture templates in French with English explanations. Enough to survive bureaucracy without being fluent.</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">Can families use the same pack?</h3>
+        <p class="text-gray-600 text-sm">Yes. One purchase covers your household. We’ll soon add family-specific add-ons (schooling, CAF, healthcare for kids).</p>
+      </div>
+
+      <div class="p-6 bg-white rounded-xl shadow-card">
+        <h3 class="font-semibold text-lg mb-2">How do I know this is legit?</h3>
+        <p class="text-gray-600 text-sm">We’ve helped 600+ expats with the same process. Our refund policy is clear, and our Stripe checkout is 100% secure.</p>
+      </div>
+    </div>
+
+    <div class="text-center mt-12">
+      <a href="#buy" class="inline-block bg-green-600 text-white py-3 px-8 rounded-xl hover:bg-green-700 shadow-lg transition">
+        Get Starter Checklist – $9
+      </a>
+    </div>
+  </div>
+</section>
+
+    <!-- CONTACT (conservé) -->
+    <section id="form" class="py-16 px-4 bg-white" data-aos="fade-up">
+      <div class="max-w-md mx-auto text-center space-y-4">
+        <h2 class="text-2xl font-bold">Still have questions?</h2>
+        <form name="contact" method="POST" data-netlify="true" class="space-y-3">
+          <input type="hidden" name="form-name" value="contact"/>
+          <input type="text" name="name" placeholder="Your name" required class="w-full border rounded-xl px-4 py-2"/>
+          <input type="email" name="email" placeholder="Your email" required class="w-full border rounded-xl px-4 py-2"/>
+          <textarea name="message" rows="4" placeholder="Your message" required class="w-full border rounded-xl px-4 py-2"></textarea>
+          <button type="submit" class="w-full bg-green-600 text-white py-3 rounded-xl hover:bg-gray-700 transition">Send Message</button>
+        </form>
+        <div id="form-feedback" class="hidden text-green-600 font-medium mt-4">
+          Thank you! Your message has been sent. We’ll reply within 24 hours.
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER (conservé) -->
+    <footer class="text-gray-700">
+      <div class="max-w-6xl mx-auto px-4 py-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+        <div>
+          <h4 class="text-lg font-semibold mb-4">Easy France Now!</h4>
+          <p class="text-sm">Practical tools to relocate to France with clarity and confidence.</p>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-3">Quick Links</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#hero" class="hover:text-gray-900">Home</a></li>
+            <li><a href="#how" class="hover:text-gray-900">What you get</a></li>
+            <li><a href="#guarantee" class="hover:text-gray-900">Guarantee</a></li>
+            <li><a href="#faq" class="hover:text-gray-900">FAQ</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-3">Buy</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="#buy" class="hover:text-gray-900">Starter Checklist — $9</a></li>
+            <li><a href="#team" class="hover:text-gray-900">Full Guide / Coaching</a></li>
+          </ul>
+        </div>
+        <div>
+          <h5 class="font-semibold mb-3">About</h5>
+          <ul class="space-y-2 text-sm">
+            <li><a href="mailto:support@easyfrancenow.com" class="hover:text-gray-900">support@easyfrancenow.com</a></li>
+            <li><a href="legal.html" class="hover:text-gray-900">Legal notice</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-gray-200 py-4 text-center text-sm">
+        © 2025 Easy France Now! All rights reserved.
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init({ once: true, duration: 500 });
+
+  // burger (fix)
+  const btn  = document.getElementById('menu-btn');
+  const menu = document.getElementById('mobile-menu');
+
+  function toggleMenu() {
+    const isHidden = menu.classList.contains('hidden');
+    if (isHidden) {
+      menu.classList.remove('hidden');
+      btn?.setAttribute('aria-expanded', 'true');
+    } else {
+      menu.classList.add('hidden');
+      btn?.setAttribute('aria-expanded', 'false');
+    }
+  }
+
+  if (btn && menu) {
+    btn.addEventListener('click', toggleMenu, { passive: true });
+    btn.addEventListener('touchend', toggleMenu, { passive: true });
+  }
+
+  // Tracking + binding checkout
+  function trackCheckoutStart(name, price){
+    try {
+      fbq('track','InitiateCheckout',{value:price,currency:'USD',content_name:name});
+      gtag('event','begin_checkout',{items:[{item_name:name, price:price}]});
+    } catch(e) {}
+  }
+  function bind(selector, attr, name, price){
+    document.querySelectorAll(selector).forEach(el=>{
+      const url = el.getAttribute(attr);
+      if(!url || url==='#') return;
+      el.addEventListener('click', ()=> trackCheckoutStart(name, price), {passive:true});
+      el.setAttribute('href', url);
+    });
+  }
+  bind('.efn-buy-starter','data-checkout-starter','Starter Checklist',9);
+  bind('.efn-buy-full','data-checkout-full','Full Guide',59);
+  bind('.efn-buy-call','data-checkout-call','Coaching Call',149);
+</script>
+<script src="js/main.js"></script>
+
+    <!-- Anchor: buy -->
+    <div id="buy"></div>
+  </body>
+</html>

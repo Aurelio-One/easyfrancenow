@@ -1,0 +1,51 @@
+html { font-size: 17px; background: #f8f6f1}
+header.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #f8f6f1;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+header img {filter: grayscale(1)}
+#carousel {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  min-height: 12rem;
+  overflow: hidden;
+}
+.testimonial-slide {
+  position: absolute;
+  top: 0; left: 50%;
+  width: 90%; max-width: 600px;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: opacity .8s, transform .8s;
+}
+.testimonial-slide.active {
+  transform: translateX(-50%);
+  opacity: 1;
+}
+details > summary {
+  cursor: pointer;
+  list-style: none;
+  padding: .75rem 1rem;
+  background: #f8f6f1;
+  border-radius: .375rem;
+}
+details[open] > summary {
+  background: #e5e7eb;
+}
+details > div {
+  padding: .75rem 1rem;
+  background: #f8f6f1;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+}
+.pdf-icon {
+  width: 2rem;
+  height: 2rem;
+  margin-right: .75rem;
+  flex-shrink: 0;
+  color: #3b82f6;
+}
