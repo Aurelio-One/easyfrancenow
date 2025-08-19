@@ -95,49 +95,114 @@
     </style>
   </head>
   <body class="text-gray-800 antialiased">
-<!-- NAVBAR -->
-<header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-gray-100">
-  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-    <a href="#hero" class="flex items-center gap-2">
-      <img src="img/logo.jpg" alt="EasyFranceNow!" class="h-8 rounded"/>
-      <span class="sr-only">EasyFranceNow!</span>
-    </a>
+    <!-- NAVBAR -->
+    <header
+      class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-gray-100"
+    >
+      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+        <a
+          href="#hero"
+          class="flex items-center gap-2"
+        >
+          <img
+            src="img/logo.jpg"
+            alt="EasyFranceNow!"
+            class="h-8 rounded"
+          />
+          <span class="sr-only">EasyFranceNow!</span>
+        </a>
 
-    <!-- Burger -->
-    <button id="menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false"
-            class="md:hidden text-2xl">☰</button>
+        <!-- Burger -->
+        <button
+          id="menu-btn"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
+          class="md:hidden text-2xl"
+        >
+          ☰
+        </button>
 
-    <!-- Desktop nav -->
-    <nav class="hidden md:flex items-center gap-5">
-      <a href="#details" class="hover:text-gray-700">Inside</a>
-      <a href="#reviews" class="hover:text-gray-700">Reviews</a>
-      <a href="#guarantee" class="hover:text-gray-700">Guarantee</a>
-      <a href="#faq" class="hover:text-gray-700">FAQ</a>
-      <a href="#form" class="hover:text-gray-700">Contact</a>
-      <a href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
-         onclick="trackCheckoutStart('Starter Checklist',9)"
-         class="ml-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
-        Get Checklist • $9
-      </a>
-    </nav>
-  </div>
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-5">
+          <a
+            href="#details"
+            class="hover:text-gray-700"
+            >Inside</a
+          >
+          <a
+            href="#reviews"
+            class="hover:text-gray-700"
+            >Reviews</a
+          >
+          <a
+            href="#guarantee"
+            class="hover:text-gray-700"
+            >Guarantee</a
+          >
+          <a
+            href="#faq"
+            class="hover:text-gray-700"
+            >FAQ</a
+          >
+          <a
+            href="#form"
+            class="hover:text-gray-700"
+            >Contact</a
+          >
+          <a
+            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
+            class="ml-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+          >
+            Get Checklist • $9
+          </a>
+        </nav>
+      </div>
 
-  <!-- Mobile nav -->
-  <nav id="mobile-menu" class="hidden md:hidden bg-white border-t z-40">
-    <div class="flex flex-col p-4 space-y-2">
-      <a href="#details" class="py-2 hover:text-gray-700">Inside</a>
-      <a href="#reviews" class="py-2 hover:text-gray-700">Reviews</a>
-      <a href="#guarantee" class="py-2 hover:text-gray-700">Guarantee</a>
-      <a href="#faq" class="py-2 hover:text-gray-700">FAQ</a>
-      <a href="#form" class="py-2 hover:text-gray-700">Contact</a>
-      <a href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
-         onclick="trackCheckoutStart('Starter Checklist',9)"
-         class="mt-2 bg-green-600 text-white px-4 py-3 rounded-xl text-center hover:bg-green-700">
-        Get Checklist • $9
-      </a>
-    </div>
-  </nav>
-</header>
+      <!-- Mobile nav -->
+      <nav
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t z-40"
+      >
+        <div class="flex flex-col p-4 space-y-2">
+          <a
+            href="#details"
+            class="py-2 hover:text-gray-700"
+            >Inside</a
+          >
+          <a
+            href="#reviews"
+            class="py-2 hover:text-gray-700"
+            >Reviews</a
+          >
+          <a
+            href="#guarantee"
+            class="py-2 hover:text-gray-700"
+            >Guarantee</a
+          >
+          <a
+            href="#faq"
+            class="py-2 hover:text-gray-700"
+            >FAQ</a
+          >
+          <a
+            href="#form"
+            class="py-2 hover:text-gray-700"
+            >Contact</a
+          >
+          <a
+            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
+            class="mt-2 bg-green-600 text-white px-4 py-3 rounded-xl text-center hover:bg-green-700"
+          >
+            Get Checklist • $9
+          </a>
+        </div>
+      </nav>
+    </header>
 
     <!-- HERO -->
     <section
@@ -163,7 +228,9 @@
       <div class="flex justify-center space-x-4">
         <a
           href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+          target="_blank"
           class="bg-green-600 text-white py-3 px-6 md:px-8 rounded-xl text-base md:text-lg hover:bg-green-700 shadow-xl transition"
+          onclick="trackCheckoutStart('Starter Checklist',9)"
         >
           Get Starter Checklist – $9
         </a>
@@ -208,7 +275,9 @@
         <div class="mt-2">
           <a
             href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
             class="inline-block bg-green-600 text-white py-3 px-6 rounded-xl hover:bg-green-700 transition"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
           >
             Get Starter Checklist – $9
           </a>
@@ -245,8 +314,10 @@
             <li>Admin timeline for the first 90 days</li>
           </ul>
           <a
-            href="#"
+            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
             data-checkout-starter="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
             class="efn-buy-starter inline-block bg-green-600 text-white py-3 px-6 rounded-xl text-base font-medium hover:bg-green-700 transition"
           >
             Get Instant Access • $9
@@ -272,7 +343,9 @@
           If it’s not useful, email us within 30 days for a full refund.
         </p>
         <a
-          href="#"
+          href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+          target="_blank"
+          onclick="trackCheckoutStart('Starter Checklist',9)"
           data-checkout-starter="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
           class="efn-buy-starter inline-block bg-gray-900 text-white py-3 px-8 rounded-xl text-lg hover:bg-gray-800 transition"
         >
@@ -645,7 +718,7 @@
             </h3>
             <p class="text-gray-600 text-sm">
               We’ve helped 600+ expats with the same process. Our refund policy
-              is clear, and our Stripe checkout is 100% secure.
+              is clear, and the checkout is 100% secure.
             </p>
           </div>
         </div>
@@ -653,6 +726,8 @@
         <div class="text-center mt-12">
           <a
             href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
             class="inline-block bg-green-600 text-white py-3 px-8 rounded-xl hover:bg-green-700 shadow-lg transition"
           >
             Get Starter Checklist – $9
@@ -771,6 +846,8 @@
             <li>
               <a
                 href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+                target="_blank"
+                onclick="trackCheckoutStart('Starter Checklist',9)"
                 class="hover:text-gray-900"
                 >Starter Checklist • $9</a
               >
