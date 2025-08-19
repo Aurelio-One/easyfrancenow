@@ -95,91 +95,51 @@
     </style>
   </head>
   <body class="text-gray-800 antialiased">
-    <!-- NAVBAR (conservée, épurée) -->
-    <header
-      class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-gray-100"
-    >
-      <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
-        <a
-          href="#hero"
-          class="text-2xl font-bold"
-        >
-          <img
-            src="img/logo.jpg"
-            alt="EasyFranceNow!"
-            class="h-8"
-          />
-        </a>
-        <button
-          id="menu-btn"
-          type="button"
-          aria-controls="mobile-menu"
-          aria-expanded="false"
-          class="md:hidden text-2xl"
-        >
-          ☰
-        </button>
-        <nav class="hidden md:flex items-center space-x-4">
-          <a
-            href="#hero"
-            class="hover:text-gray-600"
-            >Home</a
-          >
-          <a
-            href="#how"
-            class="hover:text-gray-600"
-            >What you get</a
-          >
-          <a
-            href="#guarantee"
-            class="hover:text-gray-600"
-            >Guarantee</a
-          >
-          <a
-            href="#faq"
-            class="hover:text-gray-600"
-            >FAQ</a
-          >
-          <a
-            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
-            class="bg-green-600 text-white px-3 py-1 rounded hover:bg-green-700"
-            >Get Checklist – $9</a
-          >
-        </nav>
-      </div>
-      <nav
-        id="mobile-menu"
-        class="hidden md:hidden bg-white border-t z-40"
-      >
-        <div class="flex flex-col p-4 space-y-2">
-          <a
-            href="#hero"
-            class="hover:text-gray-600"
-            >Home</a
-          >
-          <a
-            href="#how"
-            class="hover:text-gray-600"
-            >What you get</a
-          >
-          <a
-            href="#guarantee"
-            class="hover:text-gray-600"
-            >Guarantee</a
-          >
-          <a
-            href="#faq"
-            class="hover:text-gray-600"
-            >FAQ</a
-          >
-          <a
-            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
-            class="bg-green-600 text-white px-3 py-2 rounded hover:bg-green-700"
-            >Get Checklist – $9</a
-          >
-        </div>
-      </nav>
-    </header>
+<!-- NAVBAR -->
+<header class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-gray-100">
+  <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
+    <a href="#hero" class="flex items-center gap-2">
+      <img src="img/logo.jpg" alt="EasyFranceNow!" class="h-8 rounded"/>
+      <span class="sr-only">EasyFranceNow!</span>
+    </a>
+
+    <!-- Burger -->
+    <button id="menu-btn" type="button" aria-controls="mobile-menu" aria-expanded="false"
+            class="md:hidden text-2xl">☰</button>
+
+    <!-- Desktop nav -->
+    <nav class="hidden md:flex items-center gap-5">
+      <a href="#details" class="hover:text-gray-700">Inside</a>
+      <a href="#how" class="hover:text-gray-700">Plan</a>
+      <a href="#reviews" class="hover:text-gray-700">Reviews</a>
+      <a href="#guarantee" class="hover:text-gray-700">Guarantee</a>
+      <a href="#faq" class="hover:text-gray-700">FAQ</a>
+      <a href="#form" class="hover:text-gray-700">Contact</a>
+      <a href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+         onclick="trackCheckoutStart('Starter Checklist',9)"
+         class="ml-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700">
+        Get Checklist — $9
+      </a>
+    </nav>
+  </div>
+
+  <!-- Mobile nav -->
+  <nav id="mobile-menu" class="hidden md:hidden bg-white border-t z-40">
+    <div class="flex flex-col p-4 space-y-2">
+      <a href="#details" class="py-2 hover:text-gray-700">Inside</a>
+      <a href="#how" class="py-2 hover:text-gray-700">Plan</a>
+      <a href="#reviews" class="py-2 hover:text-gray-700">Reviews</a>
+      <a href="#guarantee" class="py-2 hover:text-gray-700">Guarantee</a>
+      <a href="#faq" class="py-2 hover:text-gray-700">FAQ</a>
+      <a href="#form" class="py-2 hover:text-gray-700">Contact</a>
+      <a href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+         onclick="trackCheckoutStart('Starter Checklist',9)"
+         class="mt-2 bg-green-600 text-white px-4 py-3 rounded-xl text-center hover:bg-green-700">
+        Get Checklist — $9
+      </a>
+    </div>
+  </nav>
+</header>
 
     <!-- HERO -->
     <section
