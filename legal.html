@@ -9,110 +9,114 @@
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-<!-- NAVBAR -->
-    <header class="sticky">
+ <!-- NAVBAR -->
+    <header
+      class="sticky top-0 z-30 bg-white/80 backdrop-blur border-b border-gray-100"
+    >
       <div class="max-w-6xl mx-auto flex items-center justify-between p-4">
         <a
-          href="/index.html#hero"
-          class="text-2xl font-bold"
+          href="#hero"
+          class="flex items-center gap-2"
         >
           <img
             src="img/logo.jpg"
-            alt="logo"
-            class="h-8"
+            alt="EasyFranceNow!"
+            class="h-8 rounded"
+            loading="lazy"
           />
+          <span class="sr-only">EasyFranceNow!</span>
         </a>
+
+        <!-- Burger -->
         <button
           id="menu-btn"
+          type="button"
+          aria-controls="mobile-menu"
+          aria-expanded="false"
           class="md:hidden text-2xl"
         >
           ☰
         </button>
-        <nav class="hidden md:flex items-center space-x-4">
+
+        <!-- Desktop nav -->
+        <nav class="hidden md:flex items-center gap-5">
           <a
-            href="index.html#hero"
-            class="hover:text-blue-600"
-            >Home</a
+            href="#details"
+            class="hover:text-gray-700"
+            >Inside</a
           >
           <a
-            href="index.html#story"
-            class="hover:text-blue-600"
-            >Our Story</a
-          >
-          <a
-            href="index.html#how"
-            class="hover:text-blue-600"
-            >How It Works</a
-          >
-          <a
-            href="index.html#details"
-            class="hover:text-blue-600"
-            >Contents</a
-          >
-          <a
-            href="index.html#team"
-            class="hover:text-blue-600"
-            >Team</a
-          >
-          <a
-            href="index.html#testimonials"
-            class="hover:text-blue-600"
+            href="#reviews"
+            class="hover:text-gray-700"
             >Reviews</a
           >
           <a
-            href="index.html#faq"
-            class="hover:text-blue-600"
+            href="#guarantee"
+            class="hover:text-gray-700"
+            >Guarantee</a
+          >
+          <a
+            href="#faq"
+            class="hover:text-gray-700"
             >FAQ</a
           >
           <a
-            href="https://buy.stripe.com/3cI5kC1B62r801l8jw3Nm00"
-            class="bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
-              onclick="trackCheckoutStart()"
-
-            >Get Pack</a
+            href="#form"
+            class="hover:text-gray-700"
+            >Contact</a
           >
+          <a
+            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
+            rel="noopener"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
+            class="ml-2 bg-green-600 text-white px-4 py-2 rounded-lg hover:bg-green-700"
+          >
+            Get Checklist • $9
+          </a>
         </nav>
       </div>
+
+      <!-- Mobile nav -->
       <nav
         id="mobile-menu"
-        class="hidden md:hidden bg-white border-t"
+        class="hidden md:hidden bg-white border-t z-40"
       >
         <div class="flex flex-col p-4 space-y-2">
           <a
-            href="index.html#hero"
-            class="hover:text-blue-600"
-            >Home</a
+            href="#details"
+            class="py-2 hover:text-gray-700"
+            >Inside</a
           >
           <a
-            href="index.html#story"
-            class="hover:text-blue-600"
-            >Our Story</a
-          >
-          <a
-            href="index.html#how"
-            class="hover:text-blue-600"
-            >How It Works</a
-          >
-          <a
-            href="index.html#details"
-            class="hover:text-blue-600"
-            >Contents</a
-          >
-          <a
-            href="index.html#team"
-            class="hover:text-blue-600"
-            >Team</a
-          >
-          <a
-            href="index.html#testimonials"
-            class="hover:text-blue-600"
+            href="#reviews"
+            class="py-2 hover:text-gray-700"
             >Reviews</a
           >
           <a
-            href="index.html#faq"
-            class="hover:text-blue-600"
+            href="#guarantee"
+            class="py-2 hover:text-gray-700"
+            >Guarantee</a
+          >
+          <a
+            href="#faq"
+            class="py-2 hover:text-gray-700"
             >FAQ</a
           >
+          <a
+            href="#form"
+            class="py-2 hover:text-gray-700"
+            >Contact</a
+          >
+          <a
+            href="https://easyfrancenow.gumroad.com/l/francestarterchecklist"
+            target="_blank"
+            rel="noopener"
+            onclick="trackCheckoutStart('Starter Checklist',9)"
+            class="mt-2 bg-green-600 text-white px-4 py-3 rounded-xl text-center hover:bg-green-700"
+          >
+            Get Checklist • $9
+          </a>
         </div>
       </nav>
     </header>
